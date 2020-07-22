@@ -29,7 +29,7 @@
       </button>
     </section>
     <main class="px-4 py-6">
-      <h3 class="text-gray-900 text-xl">Los Angeles</h3>
+      <h3 class="text-gray-900 text-xl"> Los Angeles</h3>
       <p class="text-gray-600">Live like the stars in these luxurious Southern California estates.</p>
       <div class="mt-6">
         <div>
