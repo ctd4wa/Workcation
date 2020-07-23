@@ -16,33 +16,31 @@
         </button>
       </div>
       <form>
-          <fieldset>
-            <div>
-              <label>
-                <span>Bedrooms</span>
-                <select class="form-select">
+          <fieldset class="px-4 py-4 border-t border-gray-900">
+            <div class="flex -mx-2">
+              <label class="block w-1/2 px-2">
+                <span class="text-sm font-semibold text-gray-500">Bedrooms</span>
+                <select class="mt-1 block w-full form-select">
                   <option>4</option>
                 </select>
               </label>
-            </div>
-            <div>
-              <label>
-                <span>Bathrooms</span>
-                <select class="form-select">
+              <label class="block w-1/2 px-2">
+                <span class="text-sm font-semibold text-gray-500">Bathrooms</span>
+                <select class="mt-1 block w-full form-select">
                   <option>2</option>
                 </select>
               </label>
             </div>
-            <div>
+            <div class="mt-4">
               <label>
-                <span>Price Range</span>
-                <select class="form-select">
+                <span class="text-sm font-semibold text-gray-500">Price Range</span>
+                <select class="mt-1 block w-full form-select">
                   <option>Up to $2,000 /wk</option>
                 </select>
               </label>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="px-4 py-4 border-t border-gray-900">
             <legend>Property Type</legend>
             <label>
               <input type="radio" class="form-radio" name="propertyType" value="house">
