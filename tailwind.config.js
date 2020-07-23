@@ -1,15 +1,7 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {
-      spacing: {
-        '72': '18rem',
-        '80': '20rem',
-      },
-      padding: {
-        '5/6': '83.3333333%'
-      }
-    },
+    extend: {},
     customForms: theme => ({
       // horizontalPadding: defaultTheme.spacing[3],
       // verticalPadding: defaultTheme.spacing[2],
@@ -35,5 +27,5 @@ module.exports = {
   variants: {},
   plugins: [
     require('@tailwindcss/custom-forms')
-  ],
+  ]
 }
