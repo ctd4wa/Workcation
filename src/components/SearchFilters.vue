@@ -15,9 +15,9 @@
           <span class="ml-1 text-white font-medium">Filters</span>
         </button>
       </div>
-      <form>
-          <fieldset class="px-4 py-4 border-t border-gray-900">
-            <div class="flex -mx-2">
+      <form :class="{ 'hidden': !isOpen, 'block': isOpen }" class="xl:block xl:h-full xl:flex xl:flex-col xl:justify-between">
+          <div class="px-4 py-4 border-t border-gray-900 sm:flex sm:-mx-2">
+            <div class="flex -mx-2 sm:w-1/2 sm:mx-0">
               <label class="block w-1/2 px-2">
                 <span class="text-sm font-semibold text-gray-500">Bedrooms</span>
                 <select class="mt-1 block w-full shadow form-select">
@@ -31,65 +31,69 @@
                 </select>
               </label>
             </div>
-            <div class="mt-4">
-              <label>
+            <div class="mt-4 sm:w-1/2 sm:mt-0 sm:px-2">
+              <label class="">
                 <span class="text-sm font-semibold text-gray-500">Price Range</span>
                 <select class="mt-1 block w-full shadow form-select">
                   <option>Up to $2,000 /wk</option>
                 </select>
               </label>
             </div>
-          </fieldset>
-          <fieldset class="px-4 py-4 border-t border-gray-900">
+          </div>
+          <div class="px-4 py-4 border-t border-gray-900">
             <span class="block text-sm font-semibold text-gray-500">Property Type</span>
-            <label class="mt-3 flex items-center">
-              <input type="radio" class="form-radio" name="propertyType" value="house">
-              <span class="ml-2 text-white">House</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="radio" class="form-radio" name="propertyType" value="apartment">
-              <span class="ml-2 text-white">Apartment</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="radio" class="form-radio" name="propertyType" value="loft">
-              <span class="ml-2 text-white">Loft</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="radio" class="form-radio" name="propertyType" value="townhouse">
-              <span class="ml-2 text-white">Townhouse</span>
-            </label>
-          </fieldset>
-          <fieldset class="px-4 py-4 border-t border-gray-900">
+            <div class="sm:flex">
+              <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+                <input type="radio" class="form-radio" name="propertyType" value="house">
+                <span class="ml-2 text-white">House</span>
+              </label>
+              <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+                <input type="radio" class="form-radio" name="propertyType" value="apartment">
+                <span class="ml-2 text-white">Apartment</span>
+              </label>
+              <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+                <input type="radio" class="form-radio" name="propertyType" value="loft">
+                <span class="ml-2 text-white">Loft</span>
+              </label>
+              <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+                <input type="radio" class="form-radio" name="propertyType" value="townhouse">
+                <span class="ml-2 text-white">Townhouse</span>
+              </label>
+            </div>
+          </div>
+          <div class="px-4 py-4 border-t border-gray-900">
             <span class="block text-sm font-semibold text-gray-500">Amenities</span>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="balcony">
-              <span class="ml-2 text-white">Balcony</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="airConditioning">
-              <span class="ml-2 text-white">Air Conditioning</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="pool">
-              <span class="ml-2 text-white">Pool</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="beach">
-              <span class="ml-2 text-white">Beach</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="petFriendly">
-              <span class="ml-2 text-white">Pet Friendly</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="kidFriendly">
-              <span class="ml-2 text-white">Kid Friendly</span>
-            </label>
-            <label class="mt-3 flex items-center">
-              <input type="checkbox" class="form-checkbox" name="parking">
-              <span class="ml-2 text-white">Parking</span>
-            </label>
-          </fieldset>
+            <div class="sm:flex">
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="balcony">
+                <span class="ml-2 text-white">Balcony</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="airConditioning">
+                <span class="ml-2 text-white">Air Conditioning</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="pool">
+                <span class="ml-2 text-white">Pool</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="beach">
+                <span class="ml-2 text-white">Beach</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="petFriendly">
+                <span class="ml-2 text-white">Pet Friendly</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="kidFriendly">
+                <span class="ml-2 text-white">Kid Friendly</span>
+              </label>
+              <label class="mt-3 flex items-center">
+                <input type="checkbox" class="form-checkbox" name="parking">
+                <span class="ml-2 text-white">Parking</span>
+              </label>
+            </div>
+          </div>
           <div class="bg-gray-900 px-4 py-4">
             <button class="block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg">Update Results</button>
           </div>
@@ -102,11 +106,13 @@ export default {
     props: [],
     data() {
         return {
-
+          isOpen: false,
         }
     },
     methods: {
-
+      toggle() {
+        this.isOpen = !this.isOpen
+      }
     },
 }
 </script>
