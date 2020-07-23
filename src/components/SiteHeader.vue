@@ -13,7 +13,7 @@
           </button>
         </div>
       </div>
-      <nav>
+      <nav v-show="isOpen">
         <div class="px-5 pt-2 pb-5 border-b border-gray-800">
           <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800">List Your Property</a>
           <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800">Trips</a>
@@ -36,7 +36,17 @@
 
 <script>
 export default {
-    
+    props: [],
+    data() {
+        return{
+            isOpen: false,
+        }
+    },
+    methods: {
+        toggle() {
+            this.isOpen = !this.isOpen
+        }
+    }
 }
 </script>
 
