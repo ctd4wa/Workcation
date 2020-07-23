@@ -1,11 +1,11 @@
 <template>
     <section class=" bg-gray-800 ">
       <div class="flex justify-between px-4 py-3">
-        <div class="relative">
+        <div class="relative max-w-xs w-full">
           <div class="absolute inset-y-0 left-0 flex items-center pl-3">
             <svg class="h-6 w-6 fill-current text-gray-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41l.01-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/></svg>
           </div>
-          <input class="bg-gray-900 focus:outline-none focus:bg-white focus:text-gray-900 text-white rounded-lg pl-10 pr-4 py-2" placeholder="Search by keywords">
+          <input class="block w-full bg-gray-900 focus:outline-none focus:bg-white focus:text-gray-900 text-white rounded-lg pl-10 pr-4 py-2" placeholder="Search by keywords">
         </div>
         <button type="button" class="ml-4 inline-flex items-center hover:bg-gray-600 focus:outline-none focus:shadow-outline rounded-lg shadow pl-3 pr-4"
           @click="toggle"
@@ -63,39 +63,39 @@
           </div>
           <div class="px-4 py-4 border-t border-gray-900">
             <span class="block text-sm font-semibold text-gray-500">Amenities</span>
-            <div class="sm:flex">
-              <label class="mt-3 flex items-center">
+            <div class="sm:flex sm:-mx-2 sm:flex-wrap">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="balcony">
                 <span class="ml-2 text-white">Balcony</span>
               </label>
-              <label class="mt-3 flex items-center">
-                <input type="checkbox" class="form-checkbox" name="airConditioning">
-                <span class="ml-2 text-white">Air Conditioning</span>
-              </label>
-              <label class="mt-3 flex items-center">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="pool">
                 <span class="ml-2 text-white">Pool</span>
               </label>
-              <label class="mt-3 flex items-center">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="beach">
                 <span class="ml-2 text-white">Beach</span>
               </label>
-              <label class="mt-3 flex items-center">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="petFriendly">
                 <span class="ml-2 text-white">Pet Friendly</span>
               </label>
-              <label class="mt-3 flex items-center">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="kidFriendly">
                 <span class="ml-2 text-white">Kid Friendly</span>
               </label>
-              <label class="mt-3 flex items-center">
+              <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
                 <input type="checkbox" class="form-checkbox" name="parking">
                 <span class="ml-2 text-white">Parking</span>
               </label>
+              <label class="mt-3 flex items-center sm:w-1/2 sm:px-2">
+                <input type="checkbox" class="form-checkbox" name="airConditioning">
+                <span class="ml-2 text-white">Air Conditioning</span>
+              </label>
             </div>
           </div>
-          <div class="bg-gray-900 px-4 py-4">
-            <button class="block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg">Update Results</button>
+          <div class="bg-gray-900 px-4 py-4 sm:text-right">
+            <button class="block w-full sm:w-auto sm:inline-block bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2 rounded-lg">Update Results</button>
           </div>
       </form>
     </section>
