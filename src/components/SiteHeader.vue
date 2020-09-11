@@ -16,8 +16,8 @@
       <nav class="sm:block" :class="{ 'hidden': !isopen, 'block': isOpen }">
         <div class="px-5 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0">
           <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0 sm:px-2">List Your Property</a>
-          <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0">Trips</a>
-          <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0">Messages</a>
+          <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0 sm:px-2">Trips</a>
+          <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0 sm:px-2">Messages</a>
         </div>
         <div class="px-5 py-5 sm:hidden">
           <div class="flex items-center">
