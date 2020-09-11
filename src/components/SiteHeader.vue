@@ -15,7 +15,7 @@
       </div>
       <nav class="sm:block" :class="{ 'hidden': !isopen, 'block': isOpen }">
         <div class="px-5 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0 sm:py-0">
-          <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0">List Your Property</a>
+          <a href="#" class="block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0 sm:px-2">List Your Property</a>
           <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0">Trips</a>
           <a href="#" class="mt-1 block px-3 py-1 rounded font-semibold text-white hover:bg-gray-800 sm:text-sm sm:mt-0">Messages</a>
         </div>
@@ -26,7 +26,7 @@
           </div>
           <div class="mt-5">
             <a href="#" class="block text-gray-400 hover:text-white">Account Settings</a>
-            <a href="#" class="mt-3 block text-gray-400 hover:text-white">Support</a>
+            <a href="#" class="mt-3 block text-gray-400 hovers:text-white">Support</a>
             <a href="#" class="mt-3 block text-gray-400 hover:text-white">Sign Out</a>
           </div>
         </div>
