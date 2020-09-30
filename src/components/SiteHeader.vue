@@ -26,7 +26,7 @@
           </div>
           <div class="mt-5">
             <a href="#" class="block text-gray-400 hover:text-white">Account Settings</a>
-            <a href="#" class="mt-3 block text-gray-400 hovers:text-white">Support</a>
+            <a href="#support" class="mt-3 block text-gray-400 hovers:text-white">Support</a>
             <a href="#" class="mt-3 block text-gray-400 hover:text-white">Sign Out</a>
           </div>
         </div>
